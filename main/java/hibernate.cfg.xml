@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">swetha281</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        
+        <!-- <mapping class ="com.learning.Hibernate.Employee"/>
+             <mapping class ="com.hibernate.crud.Product"/>
+             
+        
+        <mapping class="com.hibernate.association.Student"/> 
+        
+        <mapping class="com.mapping.onetoone.Employee"/>
+        <mapping class ="com.mapping.onetoone.Account"/>  
+        
+        <mapping class="com.mapping.onetomany.Category"/>
+        <mapping class="com.mapping.onetomany.Product"/> 
+        
+        <mapping class="com.mapping.manytomany.Customer"/>
+        <mapping class="com.mapping.manytomany.Products"/> 
+        
+        <mapping class ="com.hql.Book"/> -->
+        
+        <mapping class="com.hibernate.caching.first_level_cache.Car"/>
+        
+        
+        
+    </session-factory>
+</hibernate-configuration>
